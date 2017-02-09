@@ -1,5 +1,7 @@
 #Navigation Manager Fragment
 
+[Slack](https://dmcapps.slack.com/messages/navigationfragment/)
+
 ## Author
 
 Daniel Carmo, dcarmo@alumni.uoguelph.ca
@@ -9,9 +11,6 @@ Daniel Carmo, dcarmo@alumni.uoguelph.ca
 In your app build.gradle file add the following to your dependencies. Project only available on jCenter repository.
 
 ```groovy
-compile 'com.dmcapps:navigation-fragment:1.0.0'
-
-// Warning: Please continue using com.dmcapps:navigation-fragment:1.0.0 I am working with jcenter to get my package updated.
 compile 'com.github.dmcapps:navigation-fragment:2.0.2-alpha'
 ```
 
@@ -22,10 +21,6 @@ compile 'com.github.dmcapps:navigation-fragment:2.0.2-alpha'
 This version is an alpha. Please send any feedback on the [Issue Tracker](https://github.com/DMCApps/NavigationFragment/issues)
 
 ##Migration
-
-Things to do:
-- Update all Examples as they have gotten too bloated and disorganized to be helpful
-- Update ReadMe for new implementation with how to migrate.
 
 ###From 1.0.0 to 2.0.0
 
@@ -44,7 +39,7 @@ I appologize for the inconvenience but it was necessary to get this into maven a
 
 In order to ease future development. The update to version 2.0.0 has been a major refactor to remove code duplication between the support and non-support version. This will make future implementations and maintanence much easier.
 
-All the present and dismiss methods work as is. In order to perform more advanced functionality (e.g. overriding animations) you will need to call getNavigationManager() first and string together the builder patter items to perform the required tasks.
+All the present and dismiss methods work as is. In order to perform more advanced functionality (e.g. overriding animations) you will need to call beginPresentation() first and string together the builder patter items to perform the required tasks.
 
 ####Presenting a fragment
 
@@ -169,6 +164,9 @@ public class SampleFragment extends NavigationFragment {
     // ... Rest of class
 }
 ```
+
+##Upcoming Plans
+See [TODO](TODO.md)
 
 ##Change Log
 
